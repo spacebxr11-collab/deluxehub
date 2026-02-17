@@ -1,0 +1,305 @@
+# DeluxeHub Configuration File - Enhanced Version
+
+# Feature Toggles
+features:
+  join-management: true
+  server-selector: true
+  world-protection: true
+  launchpads: true
+  player-hider: true
+  scoreboard: true
+  tablist: true
+  announcements: true
+  double-jump: true
+  holograms: true
+  anti-world-downloader: true
+  custom-menus: true
+
+# Join Items Configuration
+join-items:
+  compass:
+    enabled: true
+    name: '&aServer Selector &7(Right Click)'
+    material: COMPASS
+    slot: 0
+    lore:
+      - '&7Right click to open the server selector'
+  
+  player-hider:
+    enabled: true
+    name: '&5Player Hider &7(Right Click)'
+    material: EYE_OF_ENDER
+    slot: 1
+    lore:
+      - '&7Right click to toggle player visibility'
+      - '&7Current: &aVisible'
+
+# Server Selector GUI
+server-selector:
+  title: '&8Select a Server'
+  size: 27
+  items:
+    survival:
+      slot: 11
+      material: GRASS
+      data: 0
+      name: '&2Survival'
+      lore:
+        - '&7Click to join Survival server'
+        - '&aOnline: %server_survival_online%/100'
+      command: 'server survival'
+    
+    creative:
+      slot: 13
+      material: DIAMOND_PICKAXE
+      data: 0
+      name: '&bCreative'
+      lore:
+        - '&7Click to join Creative server'
+        - '&aOnline: %server_creative_online%/50'
+      command: 'server creative'
+    
+    factions:
+      slot: 15
+      material: IRON_SWORD
+      data: 0
+      name: '&cFactions'
+      lore:
+        - '&7Click to join Factions server'
+        - '&aOnline: %server_factions_online%/100'
+      command: 'server factions'
+    
+    bedwars:
+      slot: 19
+      material: BED
+      data: 0
+      name: '&cBedwars'
+      lore:
+        - '&7Click to join Bedwars server'
+        - '&aOnline: %server_bedwars_online%/100'
+      command: 'server bedwars'
+
+    skywars:
+      slot: 21
+      material: BOW
+      data: 0
+      name: '&bSkywars'
+      lore:
+        - '&7Click to join Skywars server'
+        - '&aOnline: %server_skywars_online%/100'
+      command: 'server skywars'
+
+    modern_practice:
+      slot: 23
+      material: DIAMOND_SWORD
+      data: 0
+      name: '&dModern Practice'
+      lore:
+        - '&7Click to join Modern Practice server'
+        - '&aOnline: %server_practice_online%/100'
+      command: 'server practice'
+
+# Scoreboard Configuration
+scoreboard:
+  enabled: true
+  title: '&6&lDELUXEHUB'
+  update-interval: 20
+  lines:
+    - '&7&m-------------------'
+    - '&fPlayer: &a%player_name%'
+    - '&fRank: &a%vault_rank%'
+    - '&fOnline: &a%server_online%'
+    - '&fPing: &a%player_ping%'
+    - ''
+    - '&fServer: &a%server_name%'
+    - '&7&m-------------------'
+
+# Tablist Configuration
+tablist:
+  enabled: true
+  header:
+    - '&6&lDeluxeHub'
+    - '&7Welcome to our network!'
+  footer:
+    - '&7Store: &fstore.example.com'
+    - '&7Discord: &fdiscord.example.com'
+
+# Announcements Configuration
+announcements:
+  enabled: true
+  interval: 300
+  messages:
+    - '&aWelcome to DeluxeHub! &7Use the compass to select a server.'
+    - '&bNeed help? &7Join our Discord at discord.example.com'
+    - '&6Vote for our server! &7Visit vote.example.com'
+    - '&dPremium ranks available! &7Check out store.example.com'
+
+# Double Jump Configuration
+double-jump:
+  enabled: true
+  multiplier: 1.5
+  height: 1.2
+  sound: ENTITY_BAT_TAKEOFF
+
+# Holograms Configuration (BETA)
+holograms:
+  enabled: true
+  spawn:
+    location:
+      world: world
+      x: 0
+      y: 66
+      z: 0
+    lines:
+      - '&6&lWelcome to DeluxeHub!'
+      - '&7Online: %server_online% players'
+      - '&7Store: &fstore.example.com'
+
+# Anti-World Downloader
+anti-world-downloader:
+  enabled: true
+  kick-message: '&cWorld Downloaders are not allowed!'
+
+# Custom Menus Configuration
+custom-menus:
+  example:
+    title: '&8Custom Menu'
+    size: 27
+    items:
+      example-item:
+        slot: 13
+        material: DIAMOND
+        name: '&aExample Item'
+        lore:
+          - '&7This is an example item'
+          - '&7Click to run a command'
+        command: 'say Hello World!'
+
+# Launchpad Configuration
+launchpads:
+  enabled: true
+  velocity-multiplier: 2.5
+  height-multiplier: 1.5
+  plate-types:
+    - STONE_PLATE
+    - GOLD_PLATE
+    - IRON_PLATE
+
+# Join Features
+join:
+  motd:
+    enabled: true
+    lines:
+      - '&6&lWelcome to DeluxeHub!'
+      - '&7Enjoy your stay!'
+  
+  title:
+    enabled: true
+    title: '&6Welcome %player_name%,'
+    subtitle: '&7welcome to %server_name%'
+    fade-in: 20
+    stay: 60
+    fade-out: 20
+  
+  sound:
+    enabled: true
+    sound: LEVEL_UP
+    volume: 1.0
+    pitch: 1.0
+  
+  firework:
+    enabled: true
+    power: 1
+    colors:
+      - RED
+      - GREEN
+      - BLUE
+  
+  messages:
+    enabled: true
+    join: '&a%player_name% has joined the hub!'
+    quit: '&c%player_name% has left the hub!'
+
+# Spawn Location
+spawn:
+  location:
+    world: world
+    x: 0
+    y: 64
+    z: 0
+    yaw: 0
+    pitch: 0
+  teleport-on-join: true
+  teleport-on-respawn: true
+
+# World Event Management
+world-protection:
+  block-break: true
+  block-place: true
+  block-interaction: true
+  fall-damage: true
+  void-death: true
+  weather-change: true
+  item-pickup: true
+  item-drop: true
+  pvp: true
+  hunger-loss: true
+  mob-spawning: true
+  fire-spread: true
+  block-burning: true
+  death-messages: true
+  leaf-decay: true
+
+# Chat Management
+chat:
+  anti-swear:
+    enabled: true
+    words:
+      - 'damn'
+      - 'hell'
+      - 'crap'
+    replacement: '****'
+    warning: '&cPlease watch your language!'
+  
+  command-blocker:
+    enabled: true
+    blocked-commands:
+      - '/pl'
+      - '/plugins'
+      - '/?'
+      - '/help'
+      - '/ver'
+      - '/version'
+    message: '&cThis command is blocked!'
+  
+  chat-lock:
+    enabled: true
+    lock-message: '&cChat is currently locked!'
+    unlock-message: '&aChat has been unlocked!'
+  
+  clearchat:
+    enabled: true
+    lines: 100
+    message: '&aChat has been cleared!'
+
+# ActionBar Configuration
+actionbar:
+  enabled: true
+  message: '&7a plugin developed by spacebxr.'
+
+# Messages
+messages:
+  join: '&aWelcome to the Hub!'
+  no-permission: '&cYou do not have permission to use this command.'
+  player-only: '&cThis command can only be used by players.'
+  fly-enabled: '&aFly mode enabled!'
+  fly-disabled: '&cFly mode disabled!'
+  players-hidden: '&cPlayers are now hidden!'
+  players-shown: '&aPlayers are now visible!'
+  gamemode-set: '&aGamemode set to %gamemode%!'
+  chat-locked: '&cChat has been locked!'
+  chat-unlocked: '&aChat has been unlocked!'
+  lobby-set: '&aLobby location has been set!'
+  teleported-lobby: '&aTeleported to lobby!'
+  vanish-enabled: '&aYou are now vanished!'
+  vanish-disabled: '&cYou are no longer vanished!'

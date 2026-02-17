@@ -1,0 +1,134 @@
+name: DeluxeHub
+version: 1.0.0
+main: com.deluxehub.DeluxeHub
+author: spacebxr
+description: A premium Minecraft Hub/Lobby plugin with core features for 1.8.9
+commands:
+  hub:
+    description: Teleport to hub
+    usage: /hub
+    permission: deluxehub.hub
+  fly:
+    description: Toggle fly mode
+    usage: /fly
+    permission: deluxehub.fly
+  server:
+    description: Open server selector GUI
+    usage: /server
+    permission: deluxehub.server
+  gamemode:
+    description: Change gamemode
+    usage: /gamemode <mode>
+    permission: deluxehub.gamemode
+  gm:
+    description: Change gamemode
+    usage: /gm <mode>
+    permission: deluxehub.gamemode
+  lockchat:
+    description: Lock/unlock chat
+    usage: /lockchat
+    permission: deluxehub.lockchat
+  clearchat:
+    description: Clear chat
+    usage: /clearchat
+    permission: deluxehub.clearchat
+  setlobby:
+    description: Set lobby location
+    usage: /setlobby
+    permission: deluxehub.setlobby
+  lobby:
+    description: Teleport to lobby
+    usage: /lobby
+    permission: deluxehub.hub
+  vanish:
+    description: Toggle vanish mode
+    usage: /vanish
+    permission: deluxehub.vanish
+  menu:
+    description: Open custom menu
+    usage: /menu [name]
+    permission: deluxehub.menu
+  deluxehub:
+    description: Admin command
+    usage: /deluxehub <subcommand>
+    permission: deluxehub.admin
+    aliases: [dh]
+  hider:
+    description: Hide/show players
+    usage: /hider
+    permission: deluxehub.hider
+    aliases: [hide]
+  announce:
+    description: Send announcement
+    usage: /announce <message>
+    permission: deluxehub.announce
+depend: []
+softdepend: [PlaceholderAPI]
+permissions:
+  deluxehub.*:
+    description: All DeluxeHub permissions
+    children:
+      deluxehub.hub: true
+      deluxehub.fly: true
+      deluxehub.server: true
+      deluxehub.gamemode: true
+      deluxehub.lockchat: true
+      deluxehub.clearchat: true
+      deluxehub.setlobby: true
+      deluxehub.vanish: true
+      deluxehub.vanish.see: true
+      deluxehub.menu: true
+      deluxehub.chat.bypass: true
+      deluxehub.admin: true
+      deluxehub.hider: true
+      deluxehub.announce: true
+      deluxehub.command.bypass: true
+      deluxehub.chat.swear: true
+  deluxehub.hub:
+    description: Use hub commands
+    default: true
+  deluxehub.fly:
+    description: Toggle flight
+    default: op
+  deluxehub.server:
+    description: Use server selector
+    default: true
+  deluxehub.gamemode:
+    description: Change gamemode
+    default: op
+  deluxehub.lockchat:
+    description: Lock chat
+    default: op
+  deluxehub.clearchat:
+    description: Clear chat
+    default: op
+  deluxehub.setlobby:
+    description: Set lobby location
+    default: op
+  deluxehub.vanish:
+    description: Toggle vanish
+    default: op
+  deluxehub.vanish.see:
+    description: See vanished players
+    default: op
+  deluxehub.menu:
+    description: Use custom menus
+    default: true
+  deluxehub.chat.bypass:
+    description: Bypass chat lock
+    default: op
+  deluxehub.admin:
+    description: Admin commands
+    default: op
+  deluxehub.hider:
+    description: Hide players
+    default: true
+  deluxehub.announce:
+    description: Send announcements
+    default: op
+  deluxehub.command.bypass:
+    description: Bypass command blocker
+    default: op
+  deluxehub.chat.swear:
+    description: Bypass swear filter
+    default: op

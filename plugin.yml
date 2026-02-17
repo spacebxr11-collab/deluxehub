@@ -1,0 +1,59 @@
+name: DeluxeHub
+version: 1.0.0
+main: com.deluxehub.DeluxeHub
+author: spacebxr_
+description: Premium Hub/Lobby plugin with all features for 1.8.8
+commands:
+  hub:
+    description: Teleport to hub
+    usage: /hub
+  fly:
+    description: Toggle fly mode
+    usage: /fly
+  server:
+    description: Open server selector
+    usage: /server
+  gamemode:
+    description: Change gamemode
+    usage: /gamemode <mode>
+    aliases: [gm]
+  lockchat:
+    description: Lock/unlock chat
+    usage: /lockchat
+  clearchat:
+    description: Clear chat
+    usage: /clearchat
+  setlobby:
+    description: Set lobby location
+    usage: /setlobby
+  lobby:
+    description: Teleport to lobby
+    usage: /lobby
+  vanish:
+    description: Toggle vanish mode
+    usage: /vanish
+  menu:
+    description: Open custom menu
+    usage: /menu [name]
+  deluxehub:
+    description: Admin commands
+    usage: /deluxehub <subcommand>
+    aliases: [dh]
+  launchpad:
+    description: Create/remove launchpads
+    usage: /launchpad <create|remove|list>
+  hider:
+    description: Toggle player visibility
+    usage: /hider
+    aliases: [hide]
+  hologram:
+    description: Create holograms
+    usage: /hologram <create|remove|list> [text]
+  announce:
+    description: Send announcement
+    usage: /announce <message>
+  setjoinitem:
+    description: Set custom join items
+    usage: /setjoinitem <clear>
+depend: []
+softdepend: [PlaceholderAPI]

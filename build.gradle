@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.deluxehub'
+version = '1.0.0-SNAPSHOT'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs '.'
+    }
+}
+
+dependencies {
+    // Spigot API (Local JAR)
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}

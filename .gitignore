@@ -1,0 +1,60 @@
+# Build artifacts
+target/
+build/
+.gradle/
+bin/
+out/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE files
+.idea/
+*.iml
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+.nbsetup/
+.factorypath
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Test server files
+test-server/
+plugins/
+
+# Unnecessary files
+gradle.zip
+gradle-*/
+META-INF/
+build.sh
+
+# Keep root docs and src
+!src/
+!build.gradle
+!settings.gradle
+!README.md
+!gradlew
+!gradlew.bat
+!gradle/
+!libs/
+!libs/*.jar
+
