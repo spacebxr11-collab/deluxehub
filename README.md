@@ -140,3 +140,7 @@ join:
     ./gradlew build
     ```
 3.  The compiled JAR will be in `target/` (if using script) or `build/libs/` (if using Gradle).
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
