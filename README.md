@@ -1,3 +1,5 @@
+# THIS PROJECT IS NOW UNMAINTAINED THEREFORE IT WILL NOT RECIEVE ANY UPDATES, USE IT AT YOUR OWN RISK
+
 # DeluxeHub
 
 **DeluxeHub** is a premium, all-in-one Hub/Lobby management plugin designed specifically for Minecraft 1.8.8 servers. It combines essential hub features—like server selectors, launchpads, and holograms—into a single, lightweight plugin, optimized for performance and ease of use.
