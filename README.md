@@ -2,7 +2,7 @@
 
 # DeluxeHub
 
-**DeluxeHub** is a premium, all-in-one Hub/Lobby management plugin designed specifically for Minecraft 1.8.8 servers. It combines essential hub features—like server selectors, launchpads, and holograms—into a single, lightweight plugin, optimized for performance and ease of use.
+**DeluxeHub** is a premium, all in one Hub/Lobby management plugin designed specifically for Minecraft 1.8.8 servers. It combines essential hub features like server selectors, launchpads, and holograms—into a single, lightweight plugin, optimized for performance and ease of use.
 
 ## ✨ Features
 
@@ -12,15 +12,15 @@
     -   Includes Sound (Bat Takeoff) and Particle (Flame) effects.
     -   Configurable velocity and height.
 -   **👻 Holograms**:
-    -   Packet-based hologram system (no dependencies required!).
+    -   Packet based hologram system (no dependencies required!).
     -   Create text displays anywhere in your lobby.
 -   **💬 Chat Management**:
     -   **Clear Chat**: Wipe the chat history for all players.
     -   **Lock Chat**: Prevent players from chatting during maintenance.
-    -   **Anti-Swear**: Block specific words.
+    -   **Anti Swear**: Block specific words.
     -   **Command Blocker**: Block specific commands (e.g. `/plugins`, `/version`).
 -   **📢 Announcements**:
-    -   Auto-broadcaster with configurable interval.
+    -   Auto broadcaster with configurable interval.
     -   Manual broadcast commands (`/announce`, `/broadcast`, `/holobroadcast`).
 -   **👋 Join Events**:
     -   **Custom Join/Quit Messages**: Customizable text with placeholders.
@@ -31,10 +31,10 @@
 -   **🛡️ World Protection**:
     -   Disable block breaking/placing.
     -   Disable PVP, falldamage, and hunger.
-    -   **Anti-World Downloader**: Prevents players from downloading your map using client-side mods.
+    -   **Anti World Downloader**: Prevents players from downloading your map using client-side mods.
     -   **Void Teleport**: Teleport players back to spawn if they fall into the void.
 -   **🏃 Movement & Utilities**:
-    -   **Double Jump**: Allow players to double-jump in the lobby.
+    -   **Double Jump**: Allow players to double jump in the lobby.
     -   **Player Hider**: Item to toggle visibility of other players.
     -   **Scoreboard & Tablist**: Fully customizable sidebar and tab header/footer.
     -   **Gamemode & Fly**: Simple commands for staff management.
@@ -45,7 +45,7 @@
 2.  Place it in your server's `plugins/` folder.
 3.  Restart your server.
 4.  Edit `plugins/DeluxeHub/config.yml` to your liking.
-5.  Run `/deluxehub reload` to apply changes (some features like Join Items may require a re-join).
+5.  Run `/deluxehub reload` to apply changes (some features like Join Items may require a rejoin).
 
 ## 🛠️ Commands & Permissions
 
