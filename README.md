@@ -128,7 +128,7 @@ join:
 ### Steps
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/spacebxr11-collab/DeluxeHub.git
+    git clone https://github.com/spacebxr/DeluxeHub.git
     cd DeluxeHub
     ```
 2.  Build using the provided script (Linux/Mac):
